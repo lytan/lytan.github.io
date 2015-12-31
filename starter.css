@@ -1,11 +1,33 @@
 body {
-  padding-top: 50px;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
 }
+
 .starter-template {
-  padding: 40px 15px;
+  padding: 10px 15px;
   text-align: center;
 }
 
+html {
+  overflow: hidden;
+  height: 100%;
+}
+body {
+  overflow: auto;
+  height: 100%;
+}
+
+/* unset bs3 setting */
+.modal-open {
+ overflow: auto; 
+}
+html {
+  padding-top: 50px;
+}
+
+.modal-title{
+    text-align: center;
+}
 .nav-tabs > li, .nav-pills > li {
     float:none;
     display:inline-block;
@@ -18,10 +40,26 @@ body {
 }
 
 h3 {
-    margin-top: 0px;
+    margin-top: 8px;
+    margin-bottom: 5px;
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+.btn.outline {
+    background: none;
+    padding: 8px 20px;
 }
+.btn-primary.outline {
+    border: 2px solid #0099cc;
+    color: #0099cc;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #33a6cc;
+    border-color: #33a6cc;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
+}
+
+
