@@ -1,28 +1,22 @@
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-
 .starter-template {
   padding: 10px 15px;
   text-align: center;
 }
 
 html {
+  padding-top: 50px;
   overflow: hidden;
   height: 100%;
 }
 body {
   overflow: auto;
   height: 100%;
+  padding-bottom: 50px;
 }
 
 /* unset bs3 setting */
 .modal-open {
  overflow: auto; 
-}
-html {
-  padding-top: 50px;
 }
 
 .modal-title{
