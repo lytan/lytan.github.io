@@ -7,6 +7,8 @@ html {
   padding-top: 50px;
   overflow: hidden;
   height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 body {
   overflow: auto;
@@ -55,5 +57,21 @@ h3 {
     color: #007299;
     box-shadow: none;
 }
+.text-muted {
+  margin: 10px 0;
+}
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  background-color: #f5f5f5;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
