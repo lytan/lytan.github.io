@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="description" content="">
+    <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
     <title>Luo Yi Tan</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="starter.css" rel="stylesheet">
-      <style>
-          .well { background: #fff; text-align: center; }
-          .filter {}
-      </style>
+    <script src="bootstrap-3.2.0-dist/js/jquery-2.1.1.min.js"></script> 
+    <script src="bootstrap-3.2.0-dist/js/bootstrap.js"></script>  
+      
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-    
+
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -48,142 +48,278 @@
       </div>
     </div>
 
-    <!-- Page Content -->
+<!-- Page Content -->
     <div class="container">
+        <br>
         <!-- Page Heading -->
-        <div class="starter-template">
+        <div class="row text-center">
          <h1>Portfolio</h1>
         </div>
-        <!-- /.row -->    
-        
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-4 portfolio-item">
-                <a href="#fitymi" role="button" data-toggle="modal">
-                    <img class="img-responsive" src="images/fitymi.png" width="60%" height="30%">
-                </a>
-                <h3>
-                    <a href="#fitymi" role="button" data-toggle="modal">FITYMI Animation</a>
-                </h3>
-                <p>3D Animation project blended with live-action</p>
-            </div>
-            
-            <div class="col-md-4 portfolio-item">
-                <a href="#BVW" role="button" data-toggle="modal">
-                    <img class="img-responsive" src="images/robot_render1.png" alt="">
-                </a>
-                <h3>
-                    <a href="#BVW" role="button" data-toggle="modal">Building Virtual Worlds</a>
-                </h3>
-                <p>Rapid prototyping and art</p>
-            </div>
-            <div class="col-md-4 portfolio-item">
-                <a href="#MoralityPlay" role="button" data-toggle="modal">
-                    <img class="img-responsive" src="images/morality%20play.png" alt="">
-                </a>
-                <h3>
-                    <a href="#MoralityPlay" role="button" data-toggle="modal"> Morality Play
-                </a>
-                </h3>
-                <p>Interactive web experience made in Unity3D</p>
-            </div>
-        </div>    
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-4 portfolio-item">
-                <a href="#fluid" role="button" data-toggle="modal">
-                    <img class="img-responsive" src="images/fluid.png" width="72%" height="30%" >
-                </a>
-                <h3>
-                    <a href="#fluid" role="button" data-toggle="modal">Fluid Simulation</a>
-                </h3>
-                <p>Fluid simulation in CUDA using the SPH algorithm</p>
-            </div>
-        
+
         <!-- /.row -->
-            <div class="col-md-4 portfolio-item">
-                <a href="#cerberus" role="button" data-toggle="modal">
-                    <img class="img-responsive" src="images/cerberus.png" alt="">
+        
+        <div role="tabpanel">
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#techart" aria-controls="profile" role="tab" data-toggle="pill">Technical Art</a></li>
+        <li role="presentation"><a href="#programming" aria-controls="home" role="tab" data-toggle="pill">Programming</a></li>
+        <li role="presentation"><a href="#art" aria-controls="messages" role="tab" data-toggle="pill">Art</a></li>
+      </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        
+            
+      <!-- TechArt -->
+        
+      <div role="tabpanel" class="tab-pane fade in active" id="techart">
+        <br>
+          
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive" src="images/rig.png" width = "80%">
                 </a>
-                <h3>
-                    <a href="#cerberus" role="button" data-toggle="modal">Cerberus</a>
-                </h3>
-                <p>Kinect game made in Processing</p>
             </div>
-            <div class="col-md-4 portfolio-item">
-                <a href="#sophis" role="button" data-toggle="modal">
-                    <img class="img-responsive" src="images/sophisticated.png" alt="">
+            <div class="col-md-6">
+                <h3>Automatic rigging script</h3>
+                <h4>In progress</h4>
+                <p>Tools: Python, Maya</p>
+                <p>Python script in Maya that automatically rigs humanoid models</p>
+                <a class="btn btn-primary" href="#autorig" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+          
+        <hr>  
+          
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive" src="images/Catharsis.png" width = "70%">
                 </a>
-                <h3>
-                    <a href="#sophis" role="button" data-toggle="modal">Sophisticated Instinct</a>
-                </h3>
-                <p>3D animated short made in Maya</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Catharsis</h3>
+                <h4>In progress</h4>
+                <p>Tools: Oculus Rift, Unreal Engine 4, Maya</p>
+                <p>Sea of Stories: VR Animation project that blended live-action and 3D animation</p>
+                <a class="btn btn-primary" href="#catharsis" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+          
+        <hr>
+          
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive" src="images/loversmeet.png" >
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h3>FITYMI Animation</h3>
+                <h4>Spring 2016</h4>
+                <p>Tools: Maya, Motionbuilder</p>
+                <p>Film project that blended live-action and 3D motion capture animation</p>
+                <a class="btn btn-primary" href="#fitymi" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
+                
+                
+            </div>
+        </div>
+        <hr>  
+          
+      </div>    
+        
+    <!-- PROGRAMMING -->
+      <div role="tabpanel" class="tab-pane fade" id="programming">
+         <div class="row">
+            <br>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive" src="images/sara.png" alt="">
+                </a>
+            </div> 
+            <div class="col-md-6">
+                <h3>SARA - the Socially Aware Robot Assistant</h3>
+                <h4>Summer 2016</h4>
+                <p>Tools: Unity, Maya</p> 
+                <p>Personal assistant project done as part of the Articulab at CMU.</p>
+                <a class="btn btn-primary" href="#sara" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
          </div>
-        
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-4 portfolio-item">
-                <a href="#raytrace" role="button" data-toggle="modal">
-                    <img class="img-responsive" src="images/raytracing.png" width="80%" height="30%">
+          
+         <div class="row">
+            <br>
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive" src="images/morality%20play.png" alt="">
                 </a>
-                <h3>
-                    <a href="#raytrace" role="button" data-toggle="modal">Raytracer</a>
-                </h3>
-                <p>Raytracer written in C++</p>
+            </div> 
+            <div class="col-md-6">
+                <h3>Morality Play</h3>
+                <h4>Fall 2014</h4>
+                <p>Tools: Unity</p>
+                <p>Interactive experience that intends to inform people on their privacy and security in the digital realm.</p> 
+                <a class="btn btn-primary" href="#MoralityPlay" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
-            <!--
-            <div class="col-md-4 portfolio-item">
-                <a href="#arduino" role="button" data-toggle="modal">
-                    <img class="img-responsive" src="images/hallowuino.jpg" width="80%" height="30%">
-                </a>
-                <h3>
-                    <a href="#">Arduino Projects</a>
-                </h3>
-                <p>Projects made with Processing and Arduino</p>
-            </div>
-            -->
-            <div class="col-md-4 portfolio-item">
-                <a href="#gcs" role="button" data-toggle="modal">
-                    <img class="img-responsive" src="images/parchment-dragon.jpg" width="80%" height="30%">
-                </a>
-                <h3>
-                    <a href="#">Game Creation Society</a>
-                </h3>
-                <p>Games I've worked on in GCS</p>
-            </div>
-            
+          </div>
+          
+            <hr>
 
+          
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-responsive" src="images/fluid.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <h3>Fluid Simulation</h3>
+                    <h4>Spring 2013</h4>
+                    <p>Tools: CUDA, C++</p>
+                    <p>Fluid simulation using the SPH algorithm.</p>
+                    <a class="btn btn-primary" href="#fluid" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+          
+            <hr>
+          
+            <div class="row">
+                <br>
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-responsive" src="images/cerberus.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <h3>Cerberus</h3>
+                    <h4>Fall 2013</h4>
+                    <p>Tools: Kinect, Processing</p>
+                    <p>Worked with an artist to create a Kinect-controlled game. </p>
+                    <a class="btn btn-primary" href="#cerberus" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+            <hr> 
+          
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-responsive" src="images/raytracing.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <h3>Raytracing</h3>
+                    <h4>Fall 2012</h4>
+                    <p>Tools: C++</p>
+                    <p>Raytracing project with reflections and refraction</p>
+                    <a class="btn btn-primary" href="#raytrace" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+          
+        <hr>
         </div>
-      
+
+        
+      <!-- Art -->
+      <div role="tabpanel" class="tab-pane fade" id="art">
+        <br>  
+        <!-- Project Four -->
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#">
+                    <img class="img-responsive" src="images/robot_render1.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h3>Building Virtual Worlds</h3>
+                <h4>Fall 2015</h4>
+                <p>Tools: Unity, Maya</p>
+                <p>Made 2D and 3D art for 5-person groups in Building Virtual Worlds.  </p>
+                <a class="btn btn-primary" href="#BVW" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <hr>  
+
+            
+        <hr>
+      </div>
+          
     <!-- PROJECT DESCRIPTIONS -->
     <!-- Modals -->  
+    <div class="modal fade" id="catharsis" tabindex="-1" role="dialog" aria-labelledby="catharsis-desc">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title" id="catharsis-desc">Catharsis</h2>
+            <h4 class="modal-title">Fall 2016</h4>
+          </div>
+          <div class="modal-body">
+            <p>VR experience inspired by the book Haroun and the Sea of Stories. I am currently working on this project as a technical artist. I'm working on rigging, environment layout, and effects. Here is a look of our current prototype.</p>
+              <img class="center-block img-responsive" src="images/layout.png" width = "80%">
+              <br>
+            <p>Rigging sample:</p>  
+            <img class="center-block img-responsive" src="images/bird.png" width = "70%">    
+            <br>
+            <img class="center-block img-responsive" src="images/birdmove.gif" width = "70%">    
+              <br>  
+            <p>The project website can be found <a href="http://www.etc.cmu.edu/projects/catharsis/">here</a>. More coming soon!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+        
+    <div class="modal fade" id="autorig" tabindex="-1" role="dialog" aria-labelledby="autorig-desc">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title" id="autorig-desc">Automatic rigging script</h2>
+            <h4 class="modal-title">Fall 2016</h4>
+          </div>
+          <div class="modal-body">
+            <p>I am currently working on an automatic rigging script in Maya, using the Maya python API. My goal is to create a script that automatically generates controls for human characters.</p>
+            <p>Here are some in progress shots. Note that any animation is for rig testing only.</p>
+              <img class="center-block img-responsive" src="images/girl.png" width = "70%">
+              <br>
+            <img class="center-block img-responsive" src="images/walkcontrol.gif" height = "50%">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>     
+        
     <div class="modal fade" id="fitymi" tabindex="-1" role="dialog" aria-labelledby="fitymi-desc">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h2 class="modal-title" id="Morality-desc">FITYMI Animation</h2>
+            <h2 class="modal-title" id="fitymi-desc">FITYMI Animation</h2>
             <h4 class="modal-title">Spring 2016</h4>
           </div>
-          <div class="modal-body">
-            <p>I worked on this project as a technical artist. The film “Lovers Meet” is a blended live-action and 3D animated short film about a young man, Isaac, who finds himself inside an impressionist painting inspired by the work of Leonid Afremov.</p>
+          <div class="modal-body" id = "yt-player">
+            <p>I worked on this project as a technical artist. The film “Lovers Meet” is a blended live-action and 3D animated short film about a young man, Isaac, who finds himself inside an impressionist painting.</p>
             
             <p>I worked on modeling, rigging, retargeting and refining mocap data, camera work, and lighting, using Autodesk Maya and MotionBuilder. Below is an example of a scene that I worked on.</p>
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XeRhZ19mIBs" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XeRhZ19mIBs?rel=0&enablejsapi=1" allowfullscreen></iframe>
             </div>
               <br>
             <p>I also worked on the transition scene from live-action to animation. You can see my progress video below.</p>
               
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZkI3IMDj59E" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZkI3IMDj59E?rel=0&enablejsapi=1" allowfullscreen></iframe>
             </div>
             <br>
               
-              <p>The final film can be seen here:</p>
+              <p>The final film can be seen below, skip to 2:03 to see the final transition effect:</p>
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tmX7W9vOb3o" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/tmX7W9vOb3o?rel=0&enablejsapi=1" allowfullscreen></iframe>
             </div>
             <br>  
               
@@ -194,8 +330,8 @@
           </div>
         </div>
       </div>
-    </div>    
-    
+    </div> 
+        
     <div class="modal fade" id="BVW" tabindex="-1" role="dialog" aria-labelledby="BVW-desc">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -279,7 +415,7 @@
             <div class="row text-center">
                 <h3>Round 4: Ogopogo Tours</h3>
             </div>
-            <p>Boat tour experience designed for the CAVE platform. I modeled various props and terrain. This game was features at BVW Festival.</p>
+            <p>Boat tour experience designed for the CAVE platform. I modeled various props and laid out the terrain. This game was featured at BVW Festival 2016.</p>
             <p>Gameplay video:</p>
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0MepBxbBgME" allowfullscreen></iframe>
@@ -301,6 +437,30 @@
         </div>
       </div>
     </div>  
+        
+    <div class="modal fade" id="sara" tabindex="-1" role="dialog" aria-labelledby="sara-desc">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title" id="sara-desc">SARA - Socially Aware Robot Assistant</h2>
+            <h4 class="modal-title">Summer 2016</h4>
+          </div>
+          <div class="modal-body">
+            <p>I was a research assistant at the Articulab at CMU during the summer, where I worked on a virtual assistant. I was the sole Unity developer on the project, working on the front end systems such as UI and the character animation system. I also helped with setting up the character in Maya and integrating it into Unity</p>
+            <p>We used the Virtual Human Toolkit by USC to drive the character, and I worked on integrating the toolkit with the Unity environment and character. The video below shows the final product that was demoed at the World Economic Forum AMNC 2016. </p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cdGxk2RV_os" allowfullscreen></iframe>
+            </div>
+            <br>
+            <p>The project website can be found <a href= "http://articulab.hcii.cs.cmu.edu/projects/sara/"> here </a> </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>      
     
     <div class="modal fade" id="MoralityPlay" tabindex="-1" role="dialog" aria-labelledby="Morality-desc">
       <div class="modal-dialog modal-lg" role="document">
@@ -362,33 +522,6 @@
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6WkXG9AOgWc" allowfullscreen></iframe>
             </div>  
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div> 
-    
-    <div class="modal fade" id="sophis" tabindex="-1" role="dialog" aria-labelledby="sophis-desc">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h2 class="modal-title" id="sohpis-desc">Sophisticated Instinct</h2>
-            <h4 class="modal-title">Spring 2013</h4>
-          </div>
-          <div class="modal-body">
-              <p>I worked in a team of 5 on a 3D animated short using Maya. I mainly worked on keyframing, 2D animation and modelling. I also did some unused experimental cloth simulation for this project.</p>
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5al5xdCT8KI" allowfullscreen></iframe>
-              </div>
-              <br>
-              <p>And here is the full animation:</p>
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/66101623" allowfullscreen></iframe>
-              </div>
-              <p>The project website can be found <a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15465-s13/www/sophisticated_instinct/team.html" target="_blank">here</a></p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -481,40 +614,28 @@
         </div>
       </div>
     </div> 
+      
+    </div>                
+    </div>
+    </div>
     
-    
-                
-        
-    
-        
-    </div> <!-- Container -->
-    <!-- License
-        The MIT License (MIT)
+    <!-- script to stop youtube videos from playing-->  
+    <script>
+        $(function(){
+          $("body").on('hidden.bs.modal', function (e) {
+            var $iframes = $(e.target).find("iframe");
+            $iframes.each(function(index, iframe){
+              $(iframe).attr("src", $(iframe).attr("src"));
+            });
+          });
+        });
+   </script>  
+    <!-- /.container -->
 
-        Copyright (c) 2011-2014 Twitter, Inc
-
-        Permission is hereby granted, free of charge, to any person obtaining a copy
-        of this software and associated documentation files (the "Software"), to deal
-        in the Software without restriction, including without limitation the rights
-        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-        copies of the Software, and to permit persons to whom the Software is
-        furnished to do so, subject to the following conditions:
-
-        The above copyright notice and this permission notice shall be included in
-        all copies or substantial portions of the Software.
-
-        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-        THE SOFTWARE.
-    -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="bootstrap-3.2.0-dist/js/jquery-2.1.1.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- http://startbootstrap.com/templates/1-col-portfolio/ -->
