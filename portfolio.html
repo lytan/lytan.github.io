@@ -83,10 +83,10 @@
                 </a>
             </div>
             <div class="col-md-6">
-                <h3>Automatic rigging script</h3>
-                <h4>In progress</h4>
-                <p>Tools: Python, Maya</p>
-                <p>Python script in Maya that automatically rigs humanoid models</p>
+                <h3>Rigging tool and Pose Saver</h3>
+                <h4>Fall 2016 - current</h4>
+                <p>Tools: Python, PySide, Maya</p>
+                <p>Maya tools made using Python</p>
                 <a class="btn btn-primary" href="#autorig" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
@@ -101,7 +101,7 @@
             </div>
             <div class="col-md-6">
                 <h3>Catharsis</h3>
-                <h4>In progress</h4>
+                <h4>Fall 2016</h4>
                 <p>Tools: Oculus Rift, Unreal Engine 4, Maya</p>
                 <p>Sea of Stories: VR Animation project. Rigging, effects, environment art and layout </p>
                 <a class="btn btn-primary" href="#catharsis" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -141,7 +141,7 @@
             </div> 
             <div class="col-md-6">
                 <h3>SARA - the Socially Aware Robot Assistant</h3>
-                <h4>Summer 2016</h4>
+                <h4>Summer 2016 - Fall 2016</h4>
                 <p>Tools: Unity, Maya</p> 
                 <p>Personal assistant project done as part of the Articulab at CMU.</p>
                 <a class="btn btn-primary" href="#sara" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -267,10 +267,8 @@
             <h4 class="modal-title">Fall 2016</h4>
           </div>
           <div class="modal-body">
-            <p>VR art experience inspired by the book Haroun and the Sea of Stories. I am currently working on this project as a technical artist on rigging, effects, environment art and environment layout. Here are some screenshots of our current prototype.</p>
+            <p>VR art experience inspired by the book Haroun and the Sea of Stories. I worked on this project as a technical artist on rigging, effects, environment art and environment layout, using Maya and Unreal Engine 4.</p> 
             <img class="center-block img-responsive" src="images/catharsisworld.png" width = "90%">
-            <br>
-            <img class="center-block img-responsive" src="images/streams.png" width = "90%">
             <br>
             <p>I made a story stream building tool for the project, using Unreal's material system and blueprints. The shape, color and glow of each stream can be customized.</p>
             <img class="center-block img-responsive" src="images/seamless.gif" width = "70%">    
@@ -284,8 +282,17 @@
             <br>
             <p>Here is an animation test:</p>  
             <img class="center-block img-responsive" src="images/birdcolor.gif" width = "70%">    
-              <br>  
-            <p>The project website can be found <a href="http://www.etc.cmu.edu/projects/catharsis/">here</a>. More coming soon!</p>
+            <br>  
+              <p>More screenshots of the experience.</p>
+            <img class="center-block img-responsive" src="images/streams.png" width = "90%">
+            <br>
+            <img class="center-block img-responsive" src="images/streamsunder.png" width = "90%">
+            <br>  
+            <p>Below is a video of the full experience.</p>  
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8VUlSke9DYU?rel=0&enablejsapi=1" allowfullscreen></iframe>
+            </div>  
+            <p>The project website can be found <a href="http://www.etc.cmu.edu/projects/catharsis/">here</a>. </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -299,12 +306,14 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h2 class="modal-title" id="autorig-desc">Automatic rigging script</h2>
-            <h4 class="modal-title">Fall 2016</h4>
+            <h2 class="modal-title" id="autorig-desc">Maya tools</h2>
+            <h4 class="modal-title">Fall 2016 - In progress</h4>
           </div>
           <div class="modal-body">
-            <p>I am currently working on an automatic rigging script in Maya, using the Maya python API. My goal is to create a script that automatically generates controls for human characters.</p>
-            <p>Here are some in progress shots. The model was generated using Mixamo, the UI was created using PySide. The script takes in the names for each joint and rigs the model according to the joints, so it assumes that certain joints are present in the model.</p>
+            <p>Developing two Maya tools using Python, a rigging tool and a pose saver tool.</p>
+            <p>The rigging tool automatically generates controls for human characters.
+            The script takes in the names for each joint and rigs the model according to the joints, so it assumes that certain joints are present in the model.</p>
+            
             <div class="row">  
               <div class="col-md-8">
                 <img class="center-blcock img-responsive" src="images/girlcontrol.png">
@@ -312,12 +321,16 @@
               <div class="col-md-4">
                 <img class="center-blcock img-responsive" src="images/ui.png" width = "90%">
               </div>
-              </div>    
+            </div>    
               <br>
-              <figure>  
+              <!--figure>  
                 <img class="center-block img-responsive" src="images/walkcontrol.gif" width = "40%"> 
-                <figcaption>Animated rig for testing.</figcaption> 
-              </figure> 
+                <figcaption>Animated rig.</figcaption> 
+              </figure--> 
+            <p>The pose saver tool allows you to save and load character poses. You can also use it to mirror poses and animation. Still in progress.</p> 
+                <img class="center-blcock img-responsive" src="images/posetool.png" width=80%>
+            <br>
+              <p>The model was generated using Mixamo, the UI was created using PySide.</p>
             
           </div>
           <div class="modal-footer">
@@ -338,7 +351,7 @@
           <div class="modal-body" id = "yt-player">
             <p>I worked on this project as a technical artist. The film “Lovers Meet” is a blended live-action and 3D animated short film about a young man, Isaac, who finds himself inside the world of an impressionist painting.</p>
             
-            <p>My main task was retargeting and refining mocap data. I also worked on modeling, rigging, camera setup, and lighting, using Autodesk Maya and MotionBuilder. Below is an example of a scene that I worked on.</p>
+            <p>My main task on the film was retargeting and refining mocap data. I also worked on modeling, rigging, camera setup, and lighting, using Maya and MotionBuilder. Below is an example of a scene that I worked on.</p>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XeRhZ19mIBs?rel=0&enablejsapi=1" allowfullscreen></iframe>
             </div>
@@ -491,13 +504,13 @@
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h2 class="modal-title" id="sara-desc">SARA - Socially Aware Robot Assistant</h2>
-            <h4 class="modal-title">Summer 2016</h4>
+            <h4 class="modal-title">Summer 2016 - Fall 2016</h4>
           </div>
           <div class="modal-body">
             <p>I was a research assistant at the Articulab at CMU during the summer, where I worked on a virtual assistant. I was the sole Unity developer on the project, working on the front end systems such as UI and the character animation system. I also helped with setting up the character in Maya and integrating it into Unity.</p>
-            <p>We used the Virtual Human Toolkit by USC to drive the character, and I worked on integrating the toolkit with the Unity environment and character. The video below shows the final product that was demoed at the World Economic Forum AMNC 2016. </p>
+            <p>We used the Virtual Human Toolkit by USC-ICT to drive the character, and I worked on integrating the toolkit with the Unity environment and character. The video below shows the demo that was shown at the World Economic Forum 2017. </p>
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cdGxk2RV_os" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f6sx2fUoQNg" allowfullscreen></iframe>
             </div>
             <br>
             <p>The project website can be found <a href= "http://articulab.hcii.cs.cmu.edu/projects/sara/"> here </a> </p>
