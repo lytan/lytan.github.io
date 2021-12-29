@@ -75,8 +75,13 @@ h3 {
   padding-left: 15px;
 }
 
+figure {
+   padding-bottom: 15px; 
+}
+
 figure figcaption {
     text-align: center;
+    padding-bottom: 10px;
 }
 
 @media (min-width: 768px) {
