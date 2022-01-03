@@ -61,9 +61,10 @@
       <!-- Nav tabs -->
       <ul class="nav nav-pills" role="tablist">
         <li role="presentation" class="active"><a href="#techart" aria-controls="profile" role="tab" data-toggle="pill">Technical Art</a></li>
+        <li role="presentation"><a href="#graphics" aria-controls="profile" role="tab" data-toggle="pill">Graphics</a></li>
         <li role="presentation"><a href="#art" aria-controls="messages" role="tab" data-toggle="pill">2D and 3D Art</a></li>
       </ul>
-
+<hr>
     <!-- Tab panes -->
     <div class="tab-content">
         
@@ -71,6 +72,22 @@
         
       <div role="tabpanel" class="tab-pane fade in active" id="techart">
         <br>
+          
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#oculus" data-toggle="modal">
+                    <img class="img-responsive" src="images/oculus-logo-01.jpg">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h3>Meta Reality Labs (Oculus Research)</h3>
+                <h4>Jan 2017 - May 2017</h4>
+                <p>Worked at Meta Reality Labs as a Technical Artist.</p>
+                <a class="btn btn-primary" href="#oculus" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+          
+        <hr>
           
         <div class="row">
             <div class="col-md-6">
@@ -82,7 +99,7 @@
                 <h3>Rigging tool and Pose Saver</h3>
                 <h4>August 2016 - Dec 2016</h4>
                 <p>Tools: Python, PySide, Maya</p>
-                <p>Maya tools made using Python</p>
+                <p>Maya tools made using Python.</p>
                 <a class="btn btn-primary" href="#autorig" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
@@ -99,7 +116,7 @@
                 <h3>Catharsis</h3>
                 <h4>August 2016 - Dec 2016</h4>
                 <p>Tools: Oculus Rift, Unreal Engine 4, Maya</p>
-                <p>Sea of Stories: VR Animation project. Rigging, effects, environment art and layout </p>
+                <p>Worked on Sea of Stories, a VR Animation project. </p>
                 <a class="btn btn-primary" href="#catharsis" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
@@ -144,22 +161,7 @@
         
  
         <hr>
-        <div class="row">
-            <div class="col-md-6">
-                <a href="#fluid" data-toggle="modal">
-                    <img class="img-responsive" src="images/fluid.png" alt="">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <h3>Fluid Simulation</h3>
-                <h4>Spring 2013</h4>
-                <p>Tools: CUDA, C++</p>
-                <p>Fluid simulation using the SPH algorithm.</p>
-                <a class="btn btn-primary" href="#fluid" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-
-        <hr>
+        
 
         <div class="row">
             <br>
@@ -177,7 +179,26 @@
             </div>
         </div>
         <hr> 
+        </div>
+        
+        <div role="tabpanel" class="tab-pane fade" id="graphics">
+    
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#fluid" data-toggle="modal">
+                    <img class="img-responsive" src="images/fluid.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h3>Fluid Simulation</h3>
+                <h4>Spring 2013</h4>
+                <p>Tools: CUDA, C++</p>
+                <p>Fluid simulation using the SPH algorithm.</p>
+                <a class="btn btn-primary" href="#fluid" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
 
+        <hr>
         <div class="row">
             <div class="col-md-6">
                 <a href="#raytrace" data-toggle="modal">
@@ -188,13 +209,11 @@
                 <h3>Raytracing</h3>
                 <h4>Fall 2012</h4>
                 <p>Tools: C++</p>
-                <p>Raytracing project with reflections and refraction</p>
+                <p>Raytracing project.</p>
                 <a class="btn btn-primary" href="#raytrace" role="button" data-toggle="modal">Read more<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
-          
-        <hr>
-        </div>
+          </div>
         
       <!-- Art -->
       <div role="tabpanel" class="tab-pane fade" id="art">
@@ -219,6 +238,38 @@
           
     <!-- PROJECT DESCRIPTIONS -->
     <!-- Modals -->  
+        
+    <div class="modal fade" id="oculus" tabindex="-1" role="dialog" aria-labelledby="oculus-desc">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title" id="oculus-desc">Meta Reality Labs</h2>
+            <h4 class="modal-title">January 2017 - May 2017</h4>
+          </div>
+          <div class="modal-body">
+            <p>For my last semester at my Masters program, I worked at Meta Reality Labs (then known as Oculus Research Pittsburgh) as a Technical Artist, working on various tools and art pipeline improvements. </p>
+            <p>My main task was integrating art assets into Unreal Engine 4 for an internal social VR project, ensuring they were rendered according to artist specifications. Furthermore, I worked on several Maya scripts for exporting blendshape animation data and meshes for the research team's use. I also assisted the artists with rigging and cleaning up meshes for the VR avatars. </p>
+            <br>
+            <figure> 
+                <figcaption>Examples of meshes I worked on</figcaption>
+                <img class="center-block img-responsive" src="images/oculus-avatars.png" width = "75%">
+                
+            </figure> 
+            <br>
+            
+              <p>This video was made after my time there, but it demonstrates how the meshes were driven using a VR headset. It's very exciting to see how much the technology has progressed since I was there.</p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/86-tHA8F-zU?rel=0&enablejsapi=1" allowfullscreen></iframe>
+            </div>  
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>     
+    
     <div class="modal fade" id="catharsis" tabindex="-1" role="dialog" aria-labelledby="catharsis-desc">
       <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
